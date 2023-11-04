@@ -137,7 +137,7 @@ def insert_data(data):
 
     db = client.Cricket
 
-    collection = db['Scores']
+    collection = db['live']
 
     # Clear the previous collection
     collection.delete_many({})
