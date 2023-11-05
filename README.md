@@ -3,7 +3,7 @@
 ### Team Members:
 1. Ashish Singh
 2. Arin Rathore
-3. Ketan
+3. Ketan Kunkalikar
 
 ### Problem Statement
 Scraping Sports News Dataset
