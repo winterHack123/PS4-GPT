@@ -15,6 +15,7 @@ Scraping Sports News Dataset
 
 ### Description
 The project is about scraping sports news from various websites and storing them json format. The data is then uploaded to MongoDB. The data is then used on a dashboard to display the data. The data is also uploaded to kaggle for public use.
+There is a scheduler script which runs every 5 minutes to scrape the data from the websites. 
 
 ### Tech Stack
 1. Python
@@ -48,7 +49,7 @@ To run the dashboard, first install the requirements for node using the followin
 
 Then run the following command to start the server:
 
-```node app.js```
+```node index.js```
 
 The dashboard will be available at http://localhost:3000/
 
