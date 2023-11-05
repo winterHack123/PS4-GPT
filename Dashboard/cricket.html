@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Sports Website</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="logo2.jpg" type="image/x-icon" />
+    <style>
+      /* Internal CSS */
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        outline: none;
+        border: none;
+        text-decoration: none;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: #fff;
+      }
+
+      header h1 {
+        font-family: "Edu TAS Beginner";
+        font-size: 50px;
+      }
+      nav {
+        /* opacity: 0; */
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        left: 0;
+        background: #fff;
+        width: 90px;
+        overflow: hidden;
+        transition: width 0.2s linear;
+        box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+      }
+
+      .logo {
+        text-align: center;
+        display: flex;
+        transition: all 0.5s ease;
+        margin: 10px 0 0 10px;
+      }
+
+      .logo img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        margin-top: 10px;
+      }
+
+      .logo span {
+        font-weight: bold;
+        padding-left: 15px;
+        font-size: 18px;
+        text-transform: uppercase;
+      }
+
+      a {
+        position: relative;
+        color: rgb(85, 83, 83);
+        font-size: 14px;
+        display: table;
+        width: 300px;
+        padding: 10px;
+      }
+
+      .fas {
+        position: relative;
+        width: 70px;
+        height: 40px;
+        top: 14px;
+        font-size: 20px;
+        text-align: center;
+      }
+
+      .nav-item {
+        position: relative;
+        top: 12px;
+        margin-left: 10px;
+      }
+
+      a:hover {
+        background: #eee;
+        text-decoration: none;
+      }
+
+      nav:hover {
+        width: 280px;
+        transition: all 0.5s ease;
+      }
+
+      .cricket_header {
+        margin-left: 90px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+      }
+      .cricket_header h1 {
+        margin-left: 30px;
+        margin-right: 10px;
+      }
+      section {
+        margin-left: 90px;
+        padding: 20px;
+        z-index: 1;
+      }
+
+      footer {
+        background-color: #343a40;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+      }
+
+      .row {
+        width: 100%;
+        background-color: white;
+      }
+
+      .col-lg-4 {
+        /* width: 320px; */
+        background-color: #343a40;
+        width: 40%;
+      }
+
+      .card-body-1 {
+        background-color: white;
+        margin: 20px;
+        display: flex;
+        flex-direction: row;
+        border-radius: 4px;
+        height: 150px;
+      }
+
+      .info {
+        width: 100%;
+      }
+
+      .team {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+      }
+
+      .teamName_el {
+        margin: 20px;
+        margin-bottom: 0;
+      }
+      .teamName_el p {
+        width: 30px;
+      }
+
+      .team_unique {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+      }
+      .teamName_el_1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 20px;
+      }
+
+      .namet {
+        margin-left: 50px;
+      }
+      .over {
+        font-size: 10px;
+        margin-left: 60px;
+        justify-self: right;
+      }
+      .pp {
+        /* justify-content: left; */
+        margin: 0;
+        margin-top: 20px;
+        justify-content: right;
+      }
+
+      .teamName_el_1_status {
+        align-self: center;
+        font-size: 10px;
+        margin-left: 20px;
+      }
+      .teamName_el_1_status p {
+        width: 100%;
+      }
+      .card-body {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .card-title {
+        width: 550px;
+        font-weight: bold;
+      }
+      .card {
+        margin-bottom: 10px;
+      }
+      .col-lg-4 {
+        border-radius: 7px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="cricket_header">
+      <h1 class="cricket_header_h1">Cricket</h1>
+      <img src="cricket-bat.png" alt="Site Logo" />
+    </header>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="#" class="logo">
+            <img src="crick.png" alt="" />
+            <span class="nav-item"> Cricket</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="logo">
+            <img src="1166961_741.svg" alt="" />
+            <span class="nav-item"> Football</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="logo">
+            <img src="tennis.svg" alt="" />
+            <span class="nav-item"> Tennis</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="logo">
+            <img src="basketball.svg" alt="" />
+            <span class="nav-item"> Basketball</span>
+          </a>
+        </li>
+        <li>
+          <a href="index.html" class="logo">
+            <img src="home.svg" alt="" />
+            <!-- <img src="" alt="" /> -->
+            <span class="nav-item"> Home</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card-body-1">
+              <div class="info">
+                <div class="team">
+                  <div class="teamName_el namet"><p>Australia</p></div>
+                  <div class="teamName_el over"><p>286-3</p></div>
+                  <div class="teamName_el over pp"><p>(50)</p></div>
+                </div>
+
+                <div class="team">
+                  <div class="teamName_el namet"><p>Pakistan</p></div>
+                  <div class="teamName_el over"><p>253-3</p></div>
+                  <div class="teamName_el over pp"><p>(50)</p></div>
+                </div>
+              </div>
+              <div class="image"></div>
+            </div>
+            <div class="card-body-1">
+              <div class="info">
+                <div class="team_unique">
+                  <div class="teamName_el namet"><p>India</p></div>
+                </div>
+                <div class="team">
+                  <div class="teamName_el_1 namet"><p>South Africa</p></div>
+                  <div class="teamName_el_1 teamName_el_1_status">
+                    <p>Starts at 2 pm</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--<div class="card-body-1">
+              <h5 class="card-title">Upcoming Events</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+            <div class="card-body-1">
+              <h5 class="card-title">Upcoming Events</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div> -->
+            <p></p>
+            <!-- Dynamic content goes here -->
+          </div>
+          <div class="col-lg-8">
+            <div class="card">
+              <div class="card-body">
+                <a href="#"><h5 class="card-title">Upcoming Events</h5></a>
+              </div>
+            </div>
+            <!-- Add more cards or widgets as needed -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 SportSphere</p>
+    </footer>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+    <script src="index2.js"></script>
+    <script src="index3.js"></script>
+    <script src="frontend.js"></script>
+    <!-- Your custom JavaScript goes here -->
+  </body>
+</html>
