@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SportSphere</title>
+    <link rel="shortcut icon" href="./assets/logo1.svg" type="image/x-icon" />
+    <style>
+      /* Internal CSS */
+      @import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&display=swap");
+      * {
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .card-title {
+        color: #000;
+        /* font-size: 30px; */
+      }
+
+      header h1 {
+        font-family: "Edu TAS Beginner";
+        font-size: 40px;
+      }
+
+      nav {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+
+      li {
+        font-size: 19px;
+      }
+
+      .card-in {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .card-body-1 {
+        background-color: white;
+        margin: 20px;
+        display: flex;
+        flex-direction: row;
+        border-radius: 4px;
+        height: 150px;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./assets/logo2.jpg" alt="Site Logo" />
+      <h1>SportSphere</h1>
+    </header>
+
+    <!-- Creating the Nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cricket.html">Cricket</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Football</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Basketball</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tennis</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Section -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-88">
+            <!-- <h2>Cricket</h2> -->
+            <div class="card-body-1">
+              <div class="card-in">
+                <h5 class="card-title">Fetching Articles ...</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 SportSphere</p>
+    </footer>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+    <script src="index2.js"></script>
+    <script src="index3.js"></script>
+    <script src="index4.js"></script>
+    <script src="frontend.js"></script>
+  </body>
+</html>
