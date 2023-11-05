@@ -56,7 +56,7 @@ def clean_match_data(match_data):
     # Get the inning1
     inning1 = match_data['typeMatches'][0]['seriesMatches'][0]['seriesAdWrapper']['matches'][0]['matchScore']['team1Score']['inngs1']
     # Get the inning2
-    inning2 = match_data['typeMatches'][0]['seriesMatches'][0]['seriesAdWrapper']['matches'][0]['matchScore']['team1Score']['inngs1']
+    inning2 = match_data['typeMatches'][0]['seriesMatches'][0]['seriesAdWrapper']['matches'][0]['matchScore']['team2Score']['inngs1']
     
     # Initialize empty dictionary
     data_to_write = {

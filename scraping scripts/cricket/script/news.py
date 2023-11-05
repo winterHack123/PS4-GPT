@@ -36,11 +36,11 @@ for i in range(len(ids)):
 
     news_response = requests.get(news_url, headers=headers)
 
-    news_data[str(i)+"_"] = news_response.json()['appIndex']
+    news_data["_"+str(i)] = news_response.json()['appIndex']
 
 # remove " | Cricbuzz.com" from the title
 for i in range(len(news_data)):
-    news_data[str(i)+"_"]['seoTitle'] = news_data[str(i)+"_"]['seoTitle'].replace(" | Cricbuzz.com", "")
+    news_data["_"+str(i)]['seoTitle'] = news_data["_"+str(i)]['seoTitle'].replace(" | Cricbuzz.com", "")
 
 # Get the absolute path to the directory of the current script
 dir_path = os.path.dirname(os.path.realpath(__file__))
